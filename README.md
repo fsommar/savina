@@ -27,6 +27,6 @@ October 2014.
 * <a href="http://code.google.com/p/jetlang/">Jetlang</a> 0.2.12
 * <a href="http://jumi.fi/actors.html">Jumi</a> 0.1.196
 * <a href="http://liftweb.net/">Lift</a> 2.6-M4
-* <a href="http://docs.scala-lang.org/overviews/core/actors.html">Scala</a> 2.11.0
-* <a href="http://github.com/scalaz/scalaz">Scalaz</a> 7.1.0-M6.
+* <a href="http://docs.scala-lang.org/overviews/core/actors.html">Scala</a> 2.11.7
+* <a href="http://github.com/scalaz/scalaz">Scalaz</a> 7.1.0-M7.
 
