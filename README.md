@@ -20,7 +20,7 @@ October 2014.
 
 ## Supported actor libraries
 
-* <a href="http://akka.io/">Akka</a> 2.3.2
+* <a href="http://akka.io/">Akka</a> 2.4.11
 * <a href="http://code.google.com/p/functionaljava/">Functional-Java</a> 4.1
 * <a href="http://gpars.codehaus.org/">GPars</a> 1.2.1
 * <a href="http://wiki.rice.edu/confluence/display/PARPROG/HJ+Library">Habanero-Java library</a> 0.1.3 (includes actors and selectors)
