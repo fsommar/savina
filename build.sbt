@@ -1,14 +1,15 @@
 organization := "edu.rice.habanero"
 name := "savina"
 version := "0.0.1-SNAPSHOT"
-scalaVersion := "2.11.7"
+scalaVersion := "2.11.8"
 
 scalacOptions ++= Seq(
   "-deprecation",
   "-encoding", "UTF-8",
   "-feature",
   "-target:jvm-1.8",
-  "-unchecked"
+  "-unchecked",
+  "-language:postfixOps"
 )
 
 scalacOptions in (Compile, doc) ++= baseDirectory.map {
