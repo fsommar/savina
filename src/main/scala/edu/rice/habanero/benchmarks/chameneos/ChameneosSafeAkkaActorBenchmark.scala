@@ -6,15 +6,15 @@ import edu.rice.habanero.benchmarks.{Benchmark, BenchmarkRunner}
 
 /**
  *
- * @author <a href="http://shams.web.rice.edu/">Shams Imam</a> (shams@rice.edu)
+ * @author Fredrik Sommar
  */
-object ChameneosAkkaActorBenchmark {
+object ChameneosSafeAkkaActorBenchmark {
 
   def main(args: Array[String]) {
-    BenchmarkRunner.runBenchmark(args, new ChameneosAkkaActorBenchmark)
+    BenchmarkRunner.runBenchmark(args, new ChameneosSafeAkkaActorBenchmark)
   }
 
-  private final class ChameneosAkkaActorBenchmark extends Benchmark {
+  private final class ChameneosSafeAkkaActorBenchmark extends Benchmark {
     def initialize(args: Array[String]) {
       ChameneosConfig.parseArgs(args)
     }

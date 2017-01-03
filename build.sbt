@@ -33,6 +33,10 @@ resolvers ++= Seq(
   "Habanero Repository - Rice University" at "http://www.cs.rice.edu/~vs3/hjlib/code/maven-repo"
 )
 
+autoCompilerPlugins := true
+
+addCompilerPlugin("io.github.phaller" % "lacasa-plugin_2.11.8" % "0.1.0-SNAPSHOT")
+
 libraryDependencies ++= Seq(
   "org.scala-lang" % "scala-library" % scalaVersion.value,
   "org.scala-lang" % "scala-actors" % scalaVersion.value,
@@ -50,10 +54,7 @@ libraryDependencies ++= Seq(
   "org.scalatest" % "scalatest_2.11" % "2.1.3" % "test"
 )
 
-autoCompilerPlugins := true
-
-libraryDependencies += "io.github.phaller" % "lacasa-core_2.11.8" % "0.1.0-SNAPSHOT"
-addCompilerPlugin("io.github.phaller" % "lacasa-plugin_2.11.8" % "0.1.0-SNAPSHOT")
+libraryDependencies += "io.github.phaller" % "akka-playground_2.11.8" % "0.1.0-SNAPSHOT"
 
 logLevel := Level.Info
 logLevel in compile := Level.Info
