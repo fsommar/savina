@@ -9,7 +9,8 @@ scalacOptions ++= Seq(
   "-feature",
   "-target:jvm-1.8",
   "-unchecked",
-  "-language:postfixOps"
+  "-language:postfixOps",
+  "-P:lacasa:enable"
 )
 
 scalacOptions in (Compile, doc) ++= baseDirectory.map {
@@ -49,8 +50,13 @@ libraryDependencies ++= Seq(
   "org.scalatest" % "scalatest_2.11" % "2.1.3" % "test"
 )
 
-logLevel := Level.Warn
-logLevel in compile := Level.Warn
+autoCompilerPlugins := true
+
+libraryDependencies += "io.github.phaller" % "lacasa-core_2.11.8" % "0.1.0-SNAPSHOT"
+addCompilerPlugin("io.github.phaller" % "lacasa-plugin_2.11.8" % "0.1.0-SNAPSHOT")
+
+logLevel := Level.Info
+logLevel in compile := Level.Info
 logLevel in test := Level.Info
 
 cancelable := true
